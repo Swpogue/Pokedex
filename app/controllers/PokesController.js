@@ -11,7 +11,7 @@ function _drawPokeDex(){
   AppState.pokeDex.forEach(p=>{
     template += /*html*/`
     <div>
-    <p class="fs-4 selectable" role="button" onclick="app.PokesController.setActivePokemon('${p.id}')">${p.name}</p>
+    <p class="fs-4 selectable" role="button" onclick="app.PokesController.setActivePokemon('${p.name}')">${p.name}</p>
     </div>
     `
   })
@@ -48,9 +48,9 @@ try {
   Pop.error(error)
 }
 }
-async setActivePokemon(id) {
+async setActivePokemon(name) {
   try {
-    await pokesService.setActivePokemon(id)
+    await pokesService.setActivePokemon(name)
   } catch (error) {
     Pop.error(error)
   }

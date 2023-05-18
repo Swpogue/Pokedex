@@ -16,7 +16,7 @@ get ActivePokemonTemplate(){
   <div class="card sticky-top my-4">
         <div class="card-body">
           <p class="fs-2">${this.name}</p>
-          ${this.PokemonButton}
+           ${this.PokemonButton}
         </div>
       </div>
   
